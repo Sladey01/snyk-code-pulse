@@ -1,0 +1,14 @@
+{
+  "name": "snyk-code-pulse",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": [
+    "packages/api-client",
+    "mcp-server",
+    "dashboard"
+  ],
+  "scripts": {
+    "build": "npm run build -w @snyk-code-pulse/api-client && npm run build -w snyk-sast-admin-mcp && npm run build -w dashboard",
+    "smoke": "node mcp-server/scripts/smoke.mjs"
+  }
+}
