@@ -7,3 +7,4 @@ dist/
 dashboard/android/app/build/
 dashboard/android/.gradle/
 dashboard/android/local.properties
+*.tsbuildinfo
